@@ -696,7 +696,7 @@ textarea{
         background-color: var(--clr-green) !important;
         color: var(--clr-white) !important;
         float: left;
-        width: 50%;
+        width: 40%;
         height: 100vh;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact; 
@@ -706,7 +706,7 @@ textarea{
         background-color: var(--clr-white) !important;
         color: var(--clr-dark) !important;
         float: right;
-        width: 50%;
+        width: 60%;
         height: 100vh;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
