@@ -670,24 +670,52 @@ textarea{
 }
 
 /* print section */
-@media print{
-    body *{
+@media print {
+    body * {
         visibility: hidden;
     }
 
-    .non_print_area{
+    .non_print_area {
         display: none;
     }
 
-    .print_area, .print_area *{
+    .print_area, .print_area * {
         visibility: visible;
     }
 
-    .print_area{
+    .print_area {
         width: 100%;
         position: absolute;
         left: 0;
         top: 0;
         overflow: hidden;
     }
+
+    /* Force background color to print */
+    .preview-cnt-l {
+        background-color: var(--clr-green) !important;
+        color: var(--clr-white) !important;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact; 
+    }
+
+    .preview-cnt-r {
+        background-color: var(--clr-white) !important;
+        color: var(--clr-dark) !important;
+        float: right;
+        width: 50%;
+        height: 100vh;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .preview-cnt {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
 }
+
